@@ -614,9 +614,7 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.dateparser', 'ui.bootst
 
 .directive('uibDatepicker', function() {
   return {
-    templateUrl: function(element, attrs) {
-      return attrs.templateUrl || 'uib/template/datepicker/datepicker.html';
-    },
+    template: require('../..//template/datepicker/datepicker.html')
     scope: {
       datepickerOptions: '=?'
     },
