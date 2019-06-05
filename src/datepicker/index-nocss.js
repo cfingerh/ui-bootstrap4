@@ -1,4 +1,3 @@
-require('angular')
 require('../dateparser');
 require('../isClass');
 require('../../template/datepicker/datepicker.html');

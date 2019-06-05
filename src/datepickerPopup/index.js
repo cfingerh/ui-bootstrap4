@@ -1,3 +1,4 @@
+require('angular')
 require('../common/svg-icon.css');
 require('../datepicker/datepicker.css');
 require('../position/position.css');
