@@ -462,7 +462,7 @@ function($scope, $element, $attrs, $compile, $log, $parse, $window, $document, $
     restrict: 'A',
     transclude: true,
     templateUrl: function(element, attrs) {
-      template: require('../../template/datepickerPopup/popup.html'),
+      template: require('../../template/datepickerPopup/popup.html')
     }
   };
 });
