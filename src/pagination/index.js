@@ -1,6 +1,6 @@
 require('../paging');
 require('../tabindex');
-require('../../template/pagination/pagination.html.js');
+require('../../template/pagination/pagination.html')
 require('./pagination');
 
 var MODULE_NAME = 'ui.bootstrap.module.pagination';

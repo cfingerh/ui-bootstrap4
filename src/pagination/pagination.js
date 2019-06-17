@@ -136,9 +136,7 @@ angular.module('ui.bootstrap.pagination', ['ui.bootstrap.paging', 'ui.bootstrap.
     restrict: 'A',
     controller: 'UibPaginationController',
     controllerAs: 'pagination',
-    templateUrl: function(element, attrs) {
-      return attrs.templateUrl || 'uib/template/pagination/pagination.html';
-    },
+    template: require('../../template/pagination/pagination.html'),
     link: function(scope, element, attrs, ctrls) {
       element.addClass('pagination');
       var paginationCtrl = ctrls[0], ngModelCtrl = ctrls[1];
