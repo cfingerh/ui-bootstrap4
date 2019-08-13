@@ -1,6 +1,6 @@
-require('../../template/progressbar/progressbar.html.js');
-require('../../template/progressbar/progress.html.js');
-require('../../template/progressbar/bar.html.js');
+require('../../template/progressbar/progressbar.html');
+require('../../template/progressbar/progress.html');
+require('../../template/progressbar/bar.html');
 require('./progressbar');
 
 var MODULE_NAME = 'ui.bootstrap.module.progressbar';

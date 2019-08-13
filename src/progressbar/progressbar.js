@@ -72,7 +72,7 @@ angular.module('ui.bootstrap.progressbar', [])
     scope: {
       maxParam: '=?max'
     },
-    templateUrl: 'uib/template/progressbar/progress.html'
+    template: require('../../template/progressbar/progress.html'),
   };
 })
 
@@ -86,7 +86,8 @@ angular.module('ui.bootstrap.progressbar', [])
       type: '@',
       striped: '=?'
     },
-    templateUrl: 'uib/template/progressbar/bar.html',
+    //templateUrl: 'uib/template/progressbar/bar.html',
+    template: require('../../template/progressbar/bar.html'),
     link: function(scope, element, attrs, progressCtrl) {
       progressCtrl.addBar(scope, element, attrs);
     }
@@ -104,8 +105,10 @@ angular.module('ui.bootstrap.progressbar', [])
       type: '@',
       striped: '=?'
     },
-    templateUrl: 'uib/template/progressbar/progressbar.html',
+    //templateUrl: 'uib/template/progressbar/progressbar.html',
+    template: require('../../template/progressbar/progressbar.html'),
     link: function(scope, element, attrs, progressCtrl) {
+      7/0
       progressCtrl.addBar(scope, angular.element(element.children()[0]), {title: attrs.title});
     }
   };
