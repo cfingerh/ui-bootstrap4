@@ -1,5 +1,5 @@
-require('../../template/tabs/tab.html.js');
-require('../../template/tabs/tabset.html.js');
+require('../../template/tabs/tab.html');
+require('../../template/tabs/tabset.html');
 require('./tabs');
 
 var MODULE_NAME = 'ui.bootstrap.module.tabs';

@@ -107,9 +107,10 @@ angular.module('ui.bootstrap.tabs', [])
     },
     controller: 'UibTabsetController',
     controllerAs: 'tabset',
-    templateUrl: function(element, attrs) {
+    template: require('../../template/tabs/tabset.html'),
+    /*templateUrl: function(element, attrs) {
       return attrs.templateUrl || 'uib/template/tabs/tabset.html';
-    },
+    },*/
     link: function(scope, element, attrs) {
       scope.vertical = angular.isDefined(attrs.vertical) ?
         scope.$parent.$eval(attrs.vertical) : false;
@@ -123,9 +124,10 @@ angular.module('ui.bootstrap.tabs', [])
   return {
     require: '^uibTabset',
     replace: true,
-    templateUrl: function(element, attrs) {
+    template: require('../../template/tabs/tab.html'),
+    /*templateUrl: function(element, attrs) {
       return attrs.templateUrl || 'uib/template/tabs/tab.html';
-    },
+    },*/
     transclude: true,
     scope: {
       heading: '@',
